@@ -65,14 +65,14 @@ void getMatriz(int i, int j){
         do{
           printf("\n\nAgora escolha a linha que você deseja multiplicar (sua matriz contém %i linhas): ", i);
           scanf("%i", &chooseLine);
-        } while(chooseLine <= 0 && chooseLine > i);
+        } while(chooseLine <= 0 || chooseLine > i);
       break;
       case 1:
         printf("\tVocê escolheu a coluna!");
         do{
           printf("\n\nAgora escolha a coluna que você deseja multiplicar (sua matriz contém %i colunas): ", j);
           scanf("%i", &chooseColumn);
-        } while(chooseColumn <= 0 && chooseColumn > j);
+        } while(chooseColumn <= 0 || chooseColumn > j);
       break;
       default:
         printf("\n\tPor favor, escolha um número que seja 0 ou 1");
